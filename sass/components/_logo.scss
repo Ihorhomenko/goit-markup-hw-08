@@ -12,7 +12,30 @@
   letter-spacing: 0.03em;
   text-decoration: none;
 
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
+
   .logo__text {
     color: $header-text-color;
+  }
+}
+
+.logo--footer {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-right: 0;
+
+  margin-bottom: 20px;
+
+  .logo__text--footer {
+    color: $primary-white-color;
   }
 }
