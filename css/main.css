@@ -12,12 +12,23 @@ ul {
 
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 33px;
+  }
+}
+
+.header-line {
+  border-bottom: 1px solid #ececec;
 }
 
 .section {
@@ -36,6 +47,22 @@ ul {
   margin-left: auto;
   margin-right: auto;
   background-color: #f5f4fa;
+}
+
+.section--portfolio {
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .section--portfolio {
+    padding-bottom: 75px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--portfolio {
+    padding-bottom: 109px;
+  }
 }
 
 .container {
@@ -174,6 +201,13 @@ ul {
 
 .contacts__link:focus, .contacts__link:hover {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts__icon {
@@ -376,9 +410,8 @@ ul {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
   padding: 118px 60px;
-  background-size: 480px 400px;
+  background-size: cover;
   background-position: center;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.1))), url(../img/hero/heromob.jpg);
   background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.1)), url(../img/hero/heromob.jpg);
@@ -395,10 +428,8 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.1))), url(../img/hero/herotab.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.1)), url(../img/hero/herotab.jpg);
-    background-size: 768px 400px;
   }
 }
 
@@ -415,8 +446,8 @@ ul {
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.1))), url(../img/hero/herodesk.jpg);
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.1)), url(../img/hero/herodesk.jpg);
-    width: 1600px;
-    background-size: 1600px 600px;
+    max-width: 1600px;
+    background-size: cover;
   }
 }
 
@@ -565,6 +596,10 @@ ul {
   margin: 0;
 }
 
+.section--features {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1199px) {
   .section--features {
     display: none;
@@ -671,20 +706,17 @@ ul {
 }
 
 .cards__img {
-  width: 450px;
-  height: 460px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards__img {
-    width: 354px;
     height: 374px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cards__img {
-    width: 270px;
     height: 260px;
   }
 }

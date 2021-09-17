@@ -1,9 +1,8 @@
 .hero {
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
   padding: 118px 60px;
-  background-size: 480px 400px;
+  background-size: cover;
   background-position: center;
 
   background-image: linear-gradient(
@@ -29,14 +28,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     background-image: linear-gradient(
         to bottom,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.1)
       ),
       url(../img/hero/herotab.jpg);
-    background-size: 768px 400px;
+
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -60,8 +58,8 @@
         rgba(47, 48, 58, 0.1)
       ),
       url(../img/hero/herodesk.jpg);
-    width: 1600px;
-    background-size: 1600px 600px;
+    max-width: 1600px;
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
